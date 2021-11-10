@@ -34,6 +34,7 @@ export interface AnalyzeProps {
 }
 
 export const analyze = (text: string): AnalyzeProps => {
+  text = text.replace(/^\s+|\s+$|\s+(?=\s)/g, '');
   const words = text.split(' ').length === 1 && text.split(' ').includes('') ? [] : text.split(' ');
   const uniqueWords = removeDuplicates(words);
   const averageWordLength = getAverage(words.map((word) => word.length));

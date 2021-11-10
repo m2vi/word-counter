@@ -1,5 +1,3 @@
-import { LoremIpsum } from 'lorem-ipsum';
-
 export const config = {
   wpm: {
     reading: 200,

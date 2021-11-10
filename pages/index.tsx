@@ -11,7 +11,7 @@ const Home: NextPage = () => {
     <>
       <NextSeo title='Word Counter' description='' />
       <div className='h-screen w-full overflow-y-auto flex items-center justify-center '>
-        <div className='px-8 grid grid-cols-6 gap-4 py-11 w-full h-full max-w-4xl'>
+        <div className='px-8 grid grid-cols-6 gap-4 py-11 w-full h-full max-w-5xl'>
           <textarea
             name=''
             id=''
