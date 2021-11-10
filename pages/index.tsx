@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 import { useEffect } from 'react';
 import analyze from '../utils/analyze';
 
@@ -12,9 +11,10 @@ const Home: NextPage = () => {
   });
   return (
     <>
-      <Head>
-        <title>Word Counter</title>
-      </Head>
+      <NextSeo title='Word Counter' description='' />
+      <div className='h-screen w-full overflow-y-auto grid place-items-center'>
+        <p>Loading...</p>
+      </div>
     </>
   );
 };
